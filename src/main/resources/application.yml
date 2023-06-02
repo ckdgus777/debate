@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/debate
+    username: debate_lch
+    password: asdf1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    # h2-console 을 활용하기 위한 임시 설정
+  #    url: jdbc:h2:mem:testdb
+  #    username: sa
+  #    driver-class-name: org.h2.Driver
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        default_batch_fetch_size: 100
+  h2:
+    console:
+      enabled: false
+  sql:
+    init:
+      mode: always
+  data:
+    rest:
+      base-path: /api
+      detection-strategy: annotated
+  # 사용자가 만들어 준 properties이기 때문에, 자동완성이 뜨지 않음
+  # 이것을 위해서 spring-boot-configuration-processor 추가
+  thymeleaf3:
+    decoupled-logic: true
