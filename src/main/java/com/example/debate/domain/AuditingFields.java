@@ -29,18 +29,19 @@ public class AuditingFields {
     protected LocalDateTime createdAt; // 생성일시
 
     @CreatedBy
-    @Column(nullable = false, updatable = false, length = 100)
+    @Column(updatable = false, length = 100)
     protected Long createdBy; // 생성자
 
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)
     @LastModifiedDate
     @Column(nullable = false)
     protected LocalDateTime modifiedAt; // 수정일시
 
     @LastModifiedBy
-    @Column(nullable = false, length = 100)
+    @Column(length = 100)
     protected Long modifiedBy; // 수정자
 
     // 인기도
-    protected Long like;
-    protected Long dislike;
+    protected Long popularity;
+    protected Long unpopularity;
 }
