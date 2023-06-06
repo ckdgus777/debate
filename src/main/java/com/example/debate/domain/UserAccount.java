@@ -6,6 +6,7 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Getter
@@ -24,7 +25,7 @@ public class UserAccount extends AuditingFields {
     @Setter @Column(nullable = false, unique = true) private String userId;
     @Setter @Column(nullable = false) private String userPassword;
 
-    @Setter @Column(nullable = false, length = 100) private String name;
+    @Setter @Column(nullable = false, length = 100) private String userNm;
     @Setter @Column(nullable = false) private LocalDate birth;
     @Setter @Column(nullable = false) private String telephone;
 
@@ -35,14 +36,14 @@ public class UserAccount extends AuditingFields {
 
     private UserAccount(String userId,
                         String userPassword,
-                        String name,
+                        String userNm,
                         LocalDate birth,
                         String telephone,
                         String email,
                         String description) {
         this.userId = userId;
         this.userPassword = userPassword;
-        this.name = name;
+        this.userNm = userNm;
         this.birth = birth;
         this.telephone = telephone;
         this.email = email;
@@ -50,13 +51,21 @@ public class UserAccount extends AuditingFields {
     }
 
     public static UserAccount of(String userId,
-                        String userPassword,
-                        String name,
-                        LocalDate birth,
-                        String telephone,
-                        String email,
-                        String description) {
-        return new UserAccount(userId, userPassword, name, birth, telephone, email, description);
+                                 String userPassword,
+                                 String userNm,
+                                 LocalDate birth,
+                                 String telephone) {
+        return UserAccount.of(userId, userPassword, userNm, birth, telephone, null, null);
+    }
+
+    public static UserAccount of(String userId,
+                                String userPassword,
+                                String userNm,
+                                LocalDate birth,
+                                String telephone,
+                                String email,
+                                String description) {
+        return new UserAccount(userId, userPassword, userNm, birth, telephone, email, description);
     }
 
     @Override

@@ -17,7 +17,7 @@ import java.util.Set;
         @Index(columnList = "createdBy")
 })
 @Entity
-public class DebateBoard extends AuditingFields {
+public class DebateBoard extends AuditingFields{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,7 +28,7 @@ public class DebateBoard extends AuditingFields {
 
     @Setter
     @ManyToOne(optional = false)
-    @JoinColumn(name = "userAccount_id")
+    @JoinColumn(name = "user_account_id")
     private UserAccount userAccount;
 
     @OrderBy("createdAt DESC")

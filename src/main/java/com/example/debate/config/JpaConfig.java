@@ -10,9 +10,8 @@ import java.util.Optional;
 @EnableJpaAuditing
 @Configurable
 public class JpaConfig {
-
     @Bean
-    public AuditorAware<String> auditorAware() {
-        return () -> Optional.ofNullable("1");
+    public AuditorAware<Long> auditorAware() {
+        return () -> Optional.ofNullable(1L);
     }
 }

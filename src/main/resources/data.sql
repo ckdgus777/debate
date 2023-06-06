@@ -1,0 +1,113 @@
+-- 테스트 계정
+-- TODO: 테스트용이지만 비밀번호가 노출된 데이터 세팅. 개선하는 것이 좋을 지 고민해 보자.
+insert into user_account (user_id, user_password, user_nm, birth, telephone, created_at, created_by, modified_at, modified_by) values
+    ('lch', '{noop}1234', 'lch', '2001-01-01', '010-1111-1111', now(), 1, now(), 1)
+;
+insert into user_account (user_id, user_password, user_nm, birth, telephone, created_at, created_by, modified_at, modified_by) values
+    ('lch2', '{noop}1234', 'lch2', '2002-02-02', '010-2222-2222', now(), 2, now(), 2)
+;
+insert into user_account (user_id, user_password, user_nm, birth, telephone, created_at, created_by, modified_at, modified_by) values
+    ('lch3', '{noop}1234', 'lch3', '2003-03-03', '010-3333-3333', now(), 3, now(), 3)
+;
+
+-- boards 100개
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Skrydstrup Air Base', 'Scarlet macaw', '2023-03-10 21:49:41', '2023-01-03 14:51:34');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Beaufort County Airport', 'Woylie', '2023-03-10 13:33:43', '2023-03-31 07:33:43');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Kamalpur Airport', 'Squirrel glider', '2023-05-06 02:11:08', '2022-12-27 03:34:03');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Cachoeiro do Itapemirim Airport', 'Swan, trumpeter', '2022-10-14 12:12:49', '2023-03-24 08:13:34');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Ononge Airport', 'Fox, silver-backed', '2022-12-06 12:13:20', '2022-06-11 23:27:14');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Marlboro County Jetport H.E. Avent Field', 'Antechinus, brown', '2022-07-23 01:21:22', '2023-03-20 12:03:54');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Francisco Sarabia International Airport', 'Columbian rainbow boa', '2023-03-22 12:16:48', '2022-11-24 02:52:51');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Straubing Airport', 'Three-banded plover', '2022-08-03 03:27:58', '2022-10-13 15:52:21');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Turkmenbashi Airport', 'Suricate', '2022-10-26 09:40:04', '2022-12-25 00:46:05');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Mulka Airport', 'Bird, black-throated butcher', '2022-09-03 23:49:19', '2022-10-30 02:34:00');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Porbandar Airport', 'Kingfisher, white-throated', '2022-12-29 07:47:18', '2022-11-30 07:42:45');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Sachigo Lake Airport', 'Banded mongoose', '2022-07-26 17:43:23', '2023-05-11 20:18:49');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Qionghai Bo''ao Airport', 'Hoffman''s sloth', '2023-03-18 09:38:11', '2022-07-12 13:15:52');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Modesto City Co-Harry Sham Field', 'Puna ibis', '2022-12-16 16:25:26', '2022-10-25 18:18:16');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Viveros Island Airport', 'Pie, indian tree', '2023-02-18 23:54:07', '2022-08-25 08:33:31');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Watsonville Municipal Airport', 'Possum, pygmy', '2022-07-12 14:19:04', '2023-02-07 02:46:53');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'South Naknek Nr 2 Airport', 'Oriental short-clawed otter', '2022-12-02 23:12:38', '2023-02-14 05:30:17');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Hemavan Airport', 'Yellow-headed caracara', '2022-11-08 21:17:07', '2023-04-20 15:32:49');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Coonabarabran Airport', 'Sulfur-crested cockatoo', '2022-07-09 11:41:28', '2022-09-18 13:46:10');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Gothenburg City Airport', 'Four-striped grass mouse', '2023-04-24 19:13:54', '2022-09-07 05:20:57');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Arvidsjaur Airport', 'Coqui partridge', '2022-09-04 08:41:27', '2023-01-04 09:25:04');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Ghinnir Airport', 'Moccasin, water', '2023-03-04 17:26:22', '2023-03-14 03:52:14');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Jyvaskyla Airport', 'Plains zebra', '2022-11-01 15:24:22', '2023-05-30 22:06:29');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Mount House Airport', 'Kafue flats lechwe', '2023-04-17 05:20:42', '2022-08-16 12:04:19');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Cue Airport', 'Goose, cereopsis', '2022-11-15 15:31:35', '2022-08-10 19:46:21');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Prince Mangosuthu Buthelezi Airport', 'Fox, bat-eared', '2023-05-18 15:31:00', '2023-04-14 16:28:16');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Chisana Airport', 'Penguin, fairy', '2023-03-03 09:45:23', '2023-03-28 12:39:14');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Lawrence J Timmerman Airport', 'Red-breasted nuthatch', '2022-07-29 04:37:49', '2023-03-14 08:05:55');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Pyongyang Sunan International Airport', 'White-necked raven', '2023-04-05 06:23:45', '2022-11-14 10:17:33');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'José Martí International Airport', 'Woodcock, american', '2023-05-18 14:42:03', '2023-02-16 12:40:20');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Casigua El Cubo Airport', 'Long-tailed skua', '2023-04-26 14:22:38', '2022-12-04 02:42:58');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Humacao Airport', 'Sable antelope', '2022-12-25 20:51:22', '2023-05-15 03:52:34');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Pan Am Building Heliport', 'Bottle-nose dolphin', '2022-08-06 07:53:56', '2023-01-23 12:32:00');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Takotna Airport', 'Dove, white-winged', '2022-08-22 05:03:21', '2022-09-22 16:26:02');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Yotvata Airfield', 'Euro wallaby', '2022-12-29 10:14:26', '2022-08-02 04:45:54');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Lutsk Airport', 'Cormorant, king', '2022-12-15 20:57:14', '2022-07-23 21:54:37');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Murod Kond Airport', 'Flamingo, lesser', '2023-05-08 09:16:51', '2023-03-25 08:15:41');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Kahramanmaraş Airport', 'Common seal', '2022-09-07 23:25:04', '2022-11-05 19:18:10');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Huehuetenango Airport', 'Otter, canadian river', '2022-07-01 05:49:26', '2022-12-18 02:17:10');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Kefallinia Airport', 'Tayra', '2023-03-21 06:25:58', '2022-10-22 05:13:02');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'King Khaled Air Base', 'Bee-eater, nubian', '2023-05-14 12:09:11', '2023-05-08 15:24:57');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Tchien Airport', 'Mongoose, banded', '2023-05-30 12:19:44', '2023-05-11 16:35:08');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Kwethluk Airport', 'Lion, california sea', '2022-09-21 06:10:15', '2022-12-20 15:08:10');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Nîmes-Arles-Camargue Airport', 'Blackish oystercatcher', '2023-04-09 08:42:19', '2023-03-20 10:58:18');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'La Cumbre Airport', 'Goliath heron', '2023-05-28 01:53:40', '2022-10-13 08:30:20');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Molde Airport', 'Mountain lion', '2022-08-10 11:57:11', '2022-07-01 12:53:25');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'London Biggin Hill Airport', 'Deer, red', '2023-05-28 14:41:11', '2022-12-28 08:22:55');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Nowata Airport', 'Red brocket', '2022-08-20 20:17:21', '2022-08-24 12:53:46');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Cliff Hatfield Memorial Airport', 'Heron, gray', '2022-09-28 15:23:01', '2022-12-25 08:41:37');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Renton Municipal Airport', 'White-throated toucan', '2023-01-18 22:03:33', '2023-02-08 11:32:59');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Reading Regional Carl A Spaatz Field', 'Tsessebe', '2023-03-26 18:37:36', '2023-03-02 19:46:22');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Shanshan Airport', 'Shrike, southern white-crowned', '2022-10-20 06:13:52', '2022-11-24 05:02:10');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Arusha Airport', 'Radiated tortoise', '2022-11-12 08:43:29', '2023-03-16 22:41:52');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Napuka Island Airport', 'Downy woodpecker', '2022-12-22 03:03:46', '2022-12-05 10:34:42');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Iowa Falls Municipal Airport', 'Coot, red-knobbed', '2022-07-19 06:14:15', '2022-08-11 23:18:33');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Grand Forks Air Force Base', 'Land iguana', '2023-04-26 19:29:00', '2023-01-09 07:48:53');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Coronel E Carvajal Airport', 'Brown hyena', '2022-12-15 09:26:28', '2022-10-27 18:34:23');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Fremont County Airport', 'Pheasant, ring-necked', '2023-02-27 04:09:36', '2022-07-23 04:13:15');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Bouca Airport', 'Cockatoo, red-tailed', '2022-08-05 20:25:10', '2023-04-26 20:35:23');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Ludhiana Airport', 'Egyptian viper', '2022-10-21 01:08:42', '2022-12-17 20:39:24');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Bielsko-Bialo Kaniow Airfield', 'Silver-backed jackal', '2023-01-12 01:10:47', '2022-11-06 21:30:17');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Unguia Airport', 'Wallaby, tammar', '2023-03-15 21:26:32', '2023-03-25 15:59:36');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Akwa Ibom International Airport', 'Galapagos mockingbird', '2023-04-15 09:12:08', '2023-05-29 05:37:06');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Porterville Municipal Airport', 'Scarlet macaw', '2023-01-06 04:09:36', '2023-01-04 01:11:46');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (1, 1, 1, 'Bacău Airport', 'Salmon pink bird eater tarantula', '2022-10-16 01:28:44', '2022-08-15 18:02:14');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Fayzabad Airport', 'Capuchin, weeper', '2023-05-05 00:08:34', '2023-04-18 21:27:57');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Bishe Kola Air Base', 'Openbill, asian', '2023-05-05 08:43:37', '2022-08-16 04:17:07');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'General Leobardo C. Ruiz International Airport', 'Mourning collared dove', '2022-11-01 18:42:03', '2023-05-06 01:47:09');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Léopold Sédar Senghor International Airport', 'Cape wild cat', '2022-08-21 12:25:50', '2023-01-21 21:56:32');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Whiteriver Airport', 'African wild cat', '2022-11-01 19:56:55', '2022-07-21 17:15:04');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Masalembo Airport', 'Albatross, galapagos', '2023-03-21 10:07:50', '2022-09-17 03:09:11');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Wabag Airport', 'Admiral, indian red', '2022-11-09 09:28:32', '2023-05-17 03:00:43');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Saginaw Seaplane Base', 'Squirrel, palm', '2022-08-24 00:58:04', '2023-03-20 02:23:52');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Kunovice Airport', 'Civet, small-toothed palm', '2022-09-09 01:14:54', '2023-01-23 04:51:50');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Bhojpur Airport', 'Crane, stanley', '2023-02-23 23:36:59', '2022-10-08 17:45:25');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Magas Airport', 'Galapagos sea lion', '2022-07-10 17:29:36', '2022-10-27 03:49:13');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Childress Municipal Airport', 'Potoroo', '2022-12-26 12:03:02', '2023-01-07 19:21:46');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Echuca Airport', 'South American sea lion', '2023-02-26 21:34:01', '2023-04-06 22:22:22');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Copper Center 2 Airport', 'Dassie', '2023-04-02 22:40:54', '2023-02-27 00:11:37');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Fazenda Piraguassu Airport', 'Kongoni', '2022-08-11 17:08:49', '2022-08-31 22:04:59');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Newtok Airport', 'Jackrabbit, white-tailed', '2022-10-05 00:08:47', '2023-01-08 21:44:15');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Newton Municipal Airport', 'Asian false vampire bat', '2023-02-01 23:30:31', '2022-06-16 20:16:25');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Morafenobe Airport', 'Oribi', '2022-10-09 23:09:48', '2022-12-05 20:29:55');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Moroak Airport', 'African jacana', '2023-04-17 21:45:32', '2023-04-09 21:23:39');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Southdowns Airport', 'Grey lourie', '2023-05-28 09:20:03', '2023-05-24 17:08:52');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Colón Airport', 'Fat-tailed dunnart', '2022-10-09 10:34:07', '2022-11-07 22:31:21');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Masvingo International Airport', 'Eagle, bateleur', '2022-07-25 22:16:11', '2023-03-20 22:32:25');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Gibraltar Airport', 'Squirrel, thirteen-lined', '2023-03-04 05:31:41', '2023-04-11 09:18:28');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (2, 2, 2, 'Brunette Downs Airport', 'Cape fox', '2023-01-15 07:20:05', '2023-01-07 15:28:22');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (3, 3, 3, 'Chengde Puning Airport', 'Blue shark', '2022-09-27 14:30:46', '2023-04-20 23:10:51');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (3, 3, 3, 'Kerio Valley Airport', 'Cat, toddy', '2022-09-15 06:32:48', '2022-07-05 07:13:13');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (3, 3, 3, 'Herendeen Bay Airport', 'Brocket, red', '2023-05-04 07:20:05', '2022-09-21 08:37:29');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (3, 3, 3, 'Wangerooge Airport', 'Kingfisher, white-throated', '2022-10-05 04:45:06', '2022-08-13 12:58:10');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (3, 3, 3, 'Épinal-Mirecourt Airport', 'Goose, canada', '2023-01-31 01:09:25', '2022-12-21 07:37:28');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (3, 3, 3, 'Luena Airport', 'Rhinoceros, white', '2023-04-22 18:10:12', '2023-04-26 20:26:25');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (3, 3, 3, 'AJ Eisenberg Airport', 'Burchell''s gonolek', '2022-10-02 19:40:53', '2022-09-20 04:06:31');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (3, 3, 3, 'Moundou Airport', 'Shrew, mandras tree', '2023-02-26 19:30:36', '2023-05-26 21:49:28');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (3, 3, 3, 'Amsterdam Airport Schiphol', 'Red-necked phalarope', '2023-04-01 13:50:30', '2022-10-05 17:26:55');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (3, 3, 3, 'Vanua Balavu Airport', 'White-headed vulture', '2022-08-02 07:14:24', '2023-04-24 23:42:11');
+insert into debate_board (user_account_id, created_by, modified_by, title, content, created_at, modified_at) values (3, 3, 3, 'Pavlodar Airport', 'Jaeger, long-tailed', '2022-09-18 19:31:44', '2023-02-06 18:44:27');
