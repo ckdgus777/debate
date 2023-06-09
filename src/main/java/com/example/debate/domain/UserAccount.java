@@ -6,7 +6,6 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Getter
@@ -19,7 +18,8 @@ import java.util.Objects;
 @Entity
 public class UserAccount extends AuditingFields {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Setter @Column(nullable = false, unique = true) private String userId;
@@ -72,7 +72,7 @@ public class UserAccount extends AuditingFields {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof UserAccount that)) return false;
-        return id != null && id.equals(that.id);
+        return id != null && Objects.equals(id, that.id);
     }
 
     @Override
